@@ -1,16 +1,30 @@
+import { type } from '@testing-library/user-event/dist/type';
 import React from 'react';
+import TypewriterComponent from 'typewriter-effect';
 
 const Banner = () => {
     return (
         <div class="hero">
-            <div class="hero-content flex-col lg:flex-row-reverse">
-                <div className='mask mask-hexagon w-3/2'>
+            <div class="hero-content flex-col w-full justify-around lg:flex-row-reverse">
+                <div className='mask mask-hexagon max-w-xs'>
                     <img src="images/face.png" class="rounded-full" alt='me' />
                 </div>
-                <div className='mr-10'>
-                    <h1 class="text-5xl font-bold">Box Office News!</h1>
-                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn-primary">Get Started</button>
+                <div className='max-w-2xl'>
+                    <h1 class="text-5xl font-bold mb-5">Hi! I am Labib!</h1>
+                    <p class="text-3xl leading-relaxed mb-5">Front-end Web Developer With Expertise on
+                        <span className='font-bold'>
+                            <TypewriterComponent
+                                options={{
+                                    strings: ['HTML5', 'CSS3', 'JavaScript', 'ReactJS'],
+                                    deleteSpeed: 50,
+                                    pauseFor: 500,
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                        </span>
+                    </p>
+                    <button class="btn btn-primary">Download Resume</button>
                 </div>
             </div>
         </div>
