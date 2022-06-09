@@ -15,12 +15,13 @@ const ContactMe = () => {
                         <h1 className="text-5xl font-semibold mb-5">Get in touch</h1>
                         <p className="text-xl leading-relaxed">Send me an email if you think I can help you out with any of your web related projects.</p>
                     </div>
-                    <div>
+                    <div className='mb-5 lg:mb-0'>
                         <h1 className="text-5xl font-semibold mb-5">My socials</h1>
-                        <div className='flex justify-around'>
-                            <a target='_blank' href="https://github.com/Labib2003"><img className='hover:scale-110' src="images/icons/github.svg" alt="my GitHub" /></a>
-                            <a target='_blank' href="https://www.linkedin.com/in/labib2003/"><img className='hover:scale-110' src="images/icons/linkedin.svg" alt="my LinkedIn" /></a>
-                            <a target='_blank' href="https://www.facebook.com/profile.php?id=100074531298092"><img className='hover:scale-110' src="images/icons/facebook.svg" alt="my Facebook" /></a>
+                        <div className='grid grid-cols-4'>
+                            <a className='lg:ml-0 mx-auto' target='_blank' href="https://github.com/Labib2003"><img className='hover:scale-110' src="images/icons/github.svg" alt="my GitHub" /></a>
+                            <a className='lg:ml-0 mx-auto' target='_blank' href="https://www.linkedin.com/in/labib2003/"><img className='hover:scale-110' src="images/icons/linkedin.svg" alt="my LinkedIn" /></a>
+                            <a className='lg:ml-0 mx-auto' target='_blank' href="https://www.facebook.com/profile.php?id=100074531298092"><img className='hover:scale-110' src="images/icons/facebook.svg" alt="my Facebook" /></a>
+                            <a className='lg:ml-0 mx-auto' target='_blank' href="https://stackoverflow.com/users/18109395/labib-amir-salimi?tab=profile"><img className='hover:scale-110' src="images/icons/stackoverflow.svg" alt="my Stackoverflow" /></a>
                         </div>
                     </div>
                 </div>
