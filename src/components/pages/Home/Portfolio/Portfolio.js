@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import Service from './Service';
+import Project from './Project';
 import { motion } from 'framer-motion';
 
-const Services = () => {
-    const [services, setServices] = useState([]);
+const Portfolio = () => {
+    const [projects, setProjects] = useState([]);
     useEffect(() => {
-        fetch("jsons/services.json")
+        fetch("jsons/projects.json")
             .then(res => res.json())
-            .then(data => setServices(data));
+            .then(data => setProjects(data));
     }, []);
-
 
     return (
         <motion.div
@@ -19,16 +18,16 @@ const Services = () => {
             className="mb-32"
         >
             <div className='mb-10'>
-                <p className='text-3xl mb-5'>Services</p>
-                <h3 className='text-5xl font-semibold'>What I do:</h3>
+                <p className='text-3xl mb-5'>Portfolio</p>
+                <h3 className='text-5xl font-semibold'>My Projects:</h3>
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
                 {
-                    services.map(service => <Service service={service}></Service>)
+                    projects.map(project => <Project project={project}></Project>)
                 }
             </div>
         </motion.div>
     );
 };
 
-export default Services;
+export default Portfolio;

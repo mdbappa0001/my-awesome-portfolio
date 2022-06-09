@@ -9,7 +9,7 @@ const Banner = () => {
                 <motion.div
                     initial={{ opacity: 0, x: 50, scale: 0.9 }}
                     animate={{ opacity: 1, x: 0, scale: 1 }}
-                    transition={{ duration: 1.5, ease: "easeInOut" }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
                     className='mask mask-hexagon max-w-sm mb-12 lg:mb-0'
                 >
                     <img src="images/face.png" alt='me' />
@@ -17,7 +17,7 @@ const Banner = () => {
                 <motion.div
                     initial={{ opacity: 0, x: -50, scale: 0.9 }}
                     animate={{ opacity: 1, x: 0, scale: 1 }}
-                    transition={{ duration: 1.5, ease: "easeInOut" }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
                     className='max-w-2xl'
                 >
                     <h1 className="text-5xl font-semibold mb-5">Hi! I am Labib!</h1>
