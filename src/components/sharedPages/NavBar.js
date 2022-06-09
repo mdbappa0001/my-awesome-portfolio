@@ -3,19 +3,19 @@ import { motion } from 'framer-motion';
 
 const NavBar = () => {
     const navbarItems = <>
-        <li className='mx-auto lg:mr-4'><a href='#services'>Services</a></li>
-        <li className='mx-auto lg:mr-4'><a href='#portfolio'>Projects</a></li>
-        <li><a href='https://drive.google.com/file/d/1HjygocBdppINjJQ9laEe88QnDGac4Jz8/view?usp=sharing' target='_blank' className="btn btn-primary">Download Resume</a></li>
+        <li className='mx-auto lg:mr-4 font-bold text-white'><a href='#services'>Services</a></li>
+        <li className='mx-auto lg:mr-4 font-bold text-white'><a href='#portfolio'>Projects</a></li>
+        <li><a href='https://drive.google.com/file/d/1nCGHmQdybio5EnV6OUooDHC1vQy5-JR-/view?usp=sharing' target='_blank' className="bg-blue-700 hover:bg-blue-900 hover:text-[#FFFF00] font-bold py-2 px-4 ">Resume</a></li>
     </>
     return (
         <motion.div
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeInOut' }}
-            className="navbar bg-base-100 mb-32"
+            className="navbar bg-base-700 mb-32"
         >
             <div className="navbar-start">
-                <p className="normal-case text-xl">Labib Amir Salimi</p>
+                <p className="normal-case text-xl font-bold text-white">Abu Tanif MD Bappa</p>
             </div>
             <div className="dropdown flex navbar-end">
                 <label tabIndex="0" className="btn btn-ghost lg:hidden self-end">

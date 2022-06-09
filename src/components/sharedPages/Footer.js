@@ -6,7 +6,7 @@ const Footer = () => {
         <div>
             <footer className="footer footer-center p-10 bg-base-300 text-base-content">
                 <div>
-                    <p>Copyright © {currentYear} - All right reserved by Labib Amir Salimi</p>
+                    <p>Copyright © {currentYear} - All right reserved by Abu Tanif MD Bappa</p>
                 </div>
             </footer>
         </div>

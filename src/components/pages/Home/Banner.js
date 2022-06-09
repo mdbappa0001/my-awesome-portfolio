@@ -12,7 +12,7 @@ const Banner = () => {
                     transition={{ duration: 1, ease: "easeInOut" }}
                     className='mask mask-hexagon max-w-sm mb-12 lg:mb-0'
                 >
-                    <img src="images/face.png" alt='me' />
+                    <img src="images/face.jpg" alt='me' />
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, x: -50, scale: 0.9 }}
@@ -20,8 +20,9 @@ const Banner = () => {
                     transition={{ duration: 1, ease: "easeInOut" }}
                     className='max-w-2xl'
                 >
-                    <h1 className="text-5xl font-semibold mb-5">Hi! I am Labib!</h1>
-                    <div className="text-3xl leading-relaxed mb-5">Front-end Web Developer With Expertise on
+                    <h1 className="text-3xl font-semibold mb-5">Hi !</h1>
+                    <h1 className="text-5xl font-semibold mb-5">I am Abu Tanif MD Bappa!</h1>
+                    <div className="text-3xl leading-relaxed mb-8">Front-end Web Developer With Expertise on
                         <span className='font-semibold'>
                             <TypewriterComponent
                                 options={{
@@ -34,7 +35,7 @@ const Banner = () => {
                             />
                         </span>
                     </div>
-                    <a href="https://drive.google.com/file/d/1HjygocBdppINjJQ9laEe88QnDGac4Jz8/view?usp=sharing" target="_blank" className="btn btn-primary">Download Resume</a>
+                    <a href="https://drive.google.com/file/d/1nCGHmQdybio5EnV6OUooDHC1vQy5-JR-/view?usp=sharing" target="_blank" className="bg-blue-700 hover:bg-blue-900 hover:text-[#FFFF00] font-bold  px-4 py-4">Download Resume</a>
                 </motion.div>
             </div>
         </div>
