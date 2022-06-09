@@ -24,7 +24,7 @@ const Portfolio = () => {
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
                 {
-                    projects.map(project => <Project project={project}></Project>)
+                    projects.map(project => <Project key={project.id} project={project}></Project>)
                 }
             </div>
         </motion.div>

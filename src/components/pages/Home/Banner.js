@@ -21,7 +21,7 @@ const Banner = () => {
                     className='max-w-2xl'
                 >
                     <h1 className="text-5xl font-semibold mb-5">Hi! I am Labib!</h1>
-                    <p className="text-3xl leading-relaxed mb-5">Front-end Web Developer With Expertise on
+                    <div className="text-3xl leading-relaxed mb-5">Front-end Web Developer With Expertise on
                         <span className='font-semibold'>
                             <TypewriterComponent
                                 options={{
@@ -33,8 +33,8 @@ const Banner = () => {
                                 }}
                             />
                         </span>
-                    </p>
-                    <button className="btn btn-primary">Download Resume</button>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1HjygocBdppINjJQ9laEe88QnDGac4Jz8/view?usp=sharing" target="_blank" className="btn btn-primary">Download Resume</a>
                 </motion.div>
             </div>
         </div>

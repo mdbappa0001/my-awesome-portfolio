@@ -7,14 +7,15 @@ const Service = ({ service }) => {
         <motion.div
             whileHover={{ translateY: -15 }}
             whileTap={{ scale: 1.05 }}
-            class="card bg-base-100 shadow-xl">
-            <img src={image} alt="Shoes" className='p-10 bg-accent h-1/2' />
-            <div class="card-body">
-                <h2 class="card-title text-3xl mb-5">{title}</h2>
+            className="card bg-base-100 shadow-xl"
+        >
+            <img src={image} alt="Shoes" className='p-10 bg-secondary h-1/2' />
+            <div className="card-body">
+                <h2 className="card-title text-3xl mb-5">{title}</h2>
                 <p className='leading-relaxed'>{description}</p>
-                <div class="card-actions justify-start">
+                <div className="card-actions justify-start">
                     {
-                        technologyUsed.map(technology => <div class="badge badge-outline">{technology}</div>)
+                        technologyUsed.map((technology, index) => <div key={index} className="badge badge-outline">{technology}</div>)
                     }
                 </div>
             </div>

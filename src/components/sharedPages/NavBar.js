@@ -1,21 +1,27 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const NavBar = () => {
     const navbarItems = <>
-        <li className='mr-4'><a>Item 1</a></li>
-        <li className='mr-4'><a>Item 3</a></li>
-        <li><a className="btn">Download Resume</a></li>
+        <li className='mr-4'><a href='#services'>Services</a></li>
+        <li className='mr-4'><a href='#portfolio'>Projects</a></li>
+        <li><a href='https://drive.google.com/file/d/1HjygocBdppINjJQ9laEe88QnDGac4Jz8/view?usp=sharing' target='_blank' className="btn btn-primary">Download Resume</a></li>
     </>
     return (
-        <div className="navbar bg-base-100 mb-32">
+        <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: 'easeInOut' }}
+            className="navbar bg-base-100 mb-32"
+        >
             <div className="navbar-start">
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <p className="normal-case text-xl">Labib Amir Salimi</p>
             </div>
             <div className="dropdown flex navbar-end">
-                <label tabindex="0" className="btn btn-ghost lg:hidden self-end">
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                <label tabIndex="0" className="btn btn-ghost lg:hidden self-end">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
                 </label>
-                <ul tabindex="0" className="dropdown-content menu p-2 top-12 shadow bg-base-100 rounded-box w-52">
+                <ul tabIndex="0" className="dropdown-content menu p-2 top-12 shadow bg-base-100 rounded-box w-52">
                     {navbarItems}
                 </ul>
             </div>
@@ -24,7 +30,7 @@ const NavBar = () => {
                     {navbarItems}
                 </ul>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
