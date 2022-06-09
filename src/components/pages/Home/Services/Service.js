@@ -10,7 +10,7 @@ const Service = ({ service }) => {
             class="card bg-base-100 shadow-xl">
             <img src={image} alt="Shoes" className='p-10 bg-accent h-1/2' />
             <div class="card-body">
-                <h2 class="card-title text-xl mb-5">{title}</h2>
+                <h2 class="card-title text-3xl mb-5">{title}</h2>
                 <p className='leading-relaxed'>{description}</p>
                 <div class="card-actions justify-start">
                     {

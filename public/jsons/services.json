@@ -9,8 +9,8 @@
     {
         "id": 2,
         "image": "images/arts/react.svg",
-        "title": "Single Page Application with React",
-        "description": "I can develop fast and fully responsive React web apps with routing(protected and nested), authentication etc.",
+        "title": "SPA with React",
+        "description": "I can develop fast and fully responsive single page React web apps with routing(protected and nested), authentication etc.",
         "technologyUsed": ["JavaScript", "React", "Firebase"]
     },
     {

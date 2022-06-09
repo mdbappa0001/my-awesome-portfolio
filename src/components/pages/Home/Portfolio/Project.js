@@ -11,7 +11,7 @@ const Project = ({ project }) => {
             <img src={image} alt="Shoes" />
             <div class="card-body">
                 <div className='mb-5'>
-                    <h2 class="card-title text-xl mb-5">{name}</h2>
+                    <h2 class="card-title text-3xl mb-5">{name}</h2>
                     <p className='badge badge-outline'>{type}</p>
                 </div>
                 <p className='leading-relaxed mb-5'>{description}</p>

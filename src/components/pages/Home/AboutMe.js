@@ -15,7 +15,7 @@ const AboutMe = () => {
                 <div className='max-w-xl mr-0 lg:mr-16'>
                     <h1 class="text-5xl font-semibold mb-5">About Me</h1>
                     <p class="text-xl leading-relaxed mb-5">I am a web developer with proficiency in front-end technologies like React, JavaScript, HTML, and CSS and familiarity with back-end technologies such as NodeJS and ExpressJS.</p>
-                    <button class="btn btn-primary">Recent Projects</button>
+                    <a href='#portfolio' class="btn btn-primary">Recent Projects</a>
                 </div>
             </div>
         </motion.div>
