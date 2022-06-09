@@ -17,7 +17,7 @@
         "id": 3,
         "image": "images/arts/mern.svg",
         "title": "MERN stack web application",
-        "description": "I can develop a full stack web app using MongoDB, Express, NodeJS and React. With authorization features like JWT, admin role, payment system etc.",
-        "technologyUsed": ["MongoDB", "Express", "NodeJS", "React"]
+        "description": "I can develop a full stack web app using MongoDB, Express, React and Node. With authorization features like JWT, admin role, payment system etc.",
+        "technologyUsed": ["MongoDB", "Express", "React", "Node"]
     }
 ]
