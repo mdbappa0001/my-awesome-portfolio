@@ -1,9 +1,13 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Service = ({ service }) => {
     const { title, image, description, technologyUsed } = service;
     return (
-        <div class="card bg-base-100 shadow-xl">
+        <motion.div
+            whileHover={{ translateY: -15 }}
+            whileTap={{ scale: 1.05 }}
+            class="card bg-base-100 shadow-xl">
             <img src={image} alt="Shoes" className='p-10 bg-accent h-1/2' />
             <div class="card-body">
                 <h2 class="card-title text-xl mb-5">{title}</h2>
@@ -14,7 +18,7 @@ const Service = ({ service }) => {
                     }
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

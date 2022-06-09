@@ -10,9 +10,9 @@ const Banner = () => {
                     initial={{ opacity: 0, x: 50, scale: 0.9 }}
                     animate={{ opacity: 1, x: 0, scale: 1 }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    className='mask mask-hexagon max-w-sm  mb-12 lg:mb-0'
+                    className='mask mask-hexagon max-w-sm mb-12 lg:mb-0'
                 >
-                    <img src="images/face.png" className="rounded-full" alt='me' />
+                    <img src="images/face.png" alt='me' />
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, x: -50, scale: 0.9 }}
